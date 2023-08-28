@@ -1,0 +1,111 @@
+#Tuplas
+#1
+print("Exercício 1")
+Tupla = (1,2,3,4,5,6,7,8,9,10)
+print(Tupla)
+print("\n")
+
+#2
+print("Exercício 2")
+Tupla2 = ('Brasil', 'EUA', 'Canada' )
+
+if 'EUA' in Tupla2: 
+    print ("O elemento EUA existe na Lista!")
+print("\n")
+
+#3
+print("Exercício 3")
+valor_refeicao = 35.00
+taxa_servico = 10.00
+valor_total = valor_refeicao + taxa_servico
+
+Tupla_restaurante = (valor_refeicao, taxa_servico, valor_total)
+
+print(Tupla_restaurante)
+print("\n")
+
+#4 
+print("Exercício 4")
+Tupla_nomes = ('GUI', 'MAICON', 'KAUAN', 'TAVARES', 'CARLOS')
+
+numero_digitado = int(input("Digite um número entre 1 e 5: "))
+
+if 1 <= numero_digitado <= 5:
+    nome_correspondente =Tupla_nomes[numero_digitado - 1]
+    print(f"O nome correspondente ao número {numero_digitado} é: {nome_correspondente}")
+else:
+    print("Numero fora do intervalo válido!")
+print("\n")
+  
+ #5
+print("Exercício 5")
+Tupla_notas = (7.5, 4.3, 6.9, 9.0, 7.1)
+ 
+media = sum(Tupla_notas) / len(Tupla_notas)
+ 
+print(f"A média das notas do aluno é: {media:.2f}")
+print("\n")
+
+#6
+print("Exercicio 6")
+arco_iris = ('vermelho', 'laranja', 'amarelo', 'verde', 'azul', 'anil', 'violeta')
+
+cor = input("Digite uma cor do arco-íris: ")
+
+if cor in arco_iris:
+    print(f"A cor {cor} está no arco-íris!")
+else:
+    print(f"A cor {cor} não está no arco-íris.")
+    
+print ("\n")
+
+#7 
+print("Exercicio 7")
+temperaturas_semana = (20, 25, 32, 12, 27, 21, 23)
+
+print(f"Temperatura máxima da semana: 32°C")
+print(f"Temperatura mínima da semana: 12°C")
+print ("\n")
+
+#8
+print("Exercicio 8")
+frutas_cores = (
+    ("Cereja", "Vermelha"),
+    ("Abacaxi", "Amarelo"),
+    ("Pitaya", "Rosa"),
+    ("Uva", "Roxa"),
+    ("Abacate", "Verde")
+)
+
+for fruta, cor in frutas_cores:
+    print(f"{fruta}: {cor}")
+
+print ("\n")
+
+#9
+print("Exercicio 9")
+tupla1 = tuple(range(1, 11))  
+tupla2 = tuple(range(5, 16))  
+
+conjunto1 = set(tupla1)
+conjunto2 = set(tupla2)
+
+intersecao = conjunto1 & conjunto2
+
+print("Interseção entre as duas tuplas:")
+for numero in intersecao:
+    print(numero)
+
+print ("\n")
+
+#10 
+print("Exercicio 10")
+alfabeto = ('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z')
+
+vogais = ('a', 'e', 'i', 'o', 'u')
+
+diferenca = tuple(letra for letra in alfabeto if letra not in vogais)
+
+print("Diferença entre as duas tuplas (consoantes):")
+for letra in diferenca:
+    print(letra)

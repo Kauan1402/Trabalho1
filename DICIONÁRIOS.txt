@@ -1,0 +1,130 @@
+#Dicionários
+#Nº1: 
+print("Exercício 1")
+dic1 = {}
+dic1['cidade:'] = 'Guarapuava'
+dic1['estado:'] = 'Paraná'
+chaves1 = dic1.keys()
+valores1 = dic1.values()
+for chaves1,valores1 in dic1.items():
+  print(chaves1,valores1)
+print("\n")
+
+#Nº2
+print("Exercício 2")
+dic2 = {'nome:':'Kauan', 'idade:':18, 'cidade:':'Guarapuava'}
+chaves2 = dic2.keys()
+valores2 = dic2.values()
+for chaves2,valores2 in dic2.items():
+  print(chaves2,valores2)
+print("\n")
+
+#Nº3
+print("Exercício 3")
+dic3 = {'barra de chocolate:':7,
+        'arroz branco:':15,
+        'sabão em pó:':9}
+chaves3 = dic3.keys()
+valores3 = dic3.values()
+for chaves3,valores3 in dic3.items():
+  print(chaves3,valores3)
+print("\n")
+
+#Nº4
+print("Exercício 4")
+dic4 = {'Rio de Janeiro:':'Rio de Janeiro',
+        'Paraná:':'Curitiba',
+        'Amapá:':'Macapá'}
+estado = input("Escolha um dos três estados a seguir - Rio de Janeiro, Paraná, Amapá:")
+if 'Rio de Janeiro' in estado:
+  print("A capital é Rio de Janeiro")
+elif 'Paraná' in estado:
+  print("A capital é Curitiba")
+elif 'Amapá' in estado:
+  print("A capital é Macapá")
+else:
+  print("A resposta está incorreta, escolha uma das opções citadas.")
+print("\n")
+
+
+#Nº5
+print("Exercício 5")
+dic5 = {'Guarapuava: ':182644,
+        'Maringá: ':403063,
+        'Foz do Iguaçu: ':258248,
+        'Castro: ':71809,
+        'Morretes: ':16446}
+for chaves5,valores5 in dic5.items():
+  print(chaves5,valores5)
+print("A cidade com a maior população é Maringá")
+print("\n")
+
+#Nº6
+print("Exercício 6")
+dic6 = {'pinhão':174,
+        'milho':70,
+        'mexerica':98}
+alimento = input("Digite um dos alimentos a seguir para saber a quantidade de calorias do mesmo: Pinhão, Feijão, Milho: ")
+if 'pinhão' in alimento:
+  print("Em cada 100g de pinhão, há 174 calorias")
+elif 'milho' in alimento:
+  print("Em 100g de milho cozido, há 98 calorias")
+elif 'mexerica' in alimento:
+  print("Em 100g de mexerica, há 53 calorias")
+else:
+  print("A resposta está incorreta, escolha uma das opções citadas.")
+print("\n")
+
+
+#Nº7
+print("Exercício 7")
+dic7 = {'tubarão':'peixe',
+        'jacaré':'réptil',
+        'sapo':'anfíbio',
+        'tigre':'mamífero',
+        'águia':'ave'}
+for animal in dic7:
+  print(animal)
+print("\n")
+
+
+
+#Nº8
+print("Exercício 8")
+dic8 = {'Suécia':'amarelo e azul',
+        'França':'azul, branco e vermelho',
+        'Inglaterra':'vermelho e branco',
+        'África do Sul':'preto, branco, vermelho, amarelo, verde, azul',
+        'Brasil':'verde, amarelo, azul, branco'}
+for bandeira in dic8:
+  print(bandeira)
+print("\n")
+
+
+#Nº9
+print("Exercício 9")
+dic9 = {'Uva = ':'roxa ou verde',
+        'Maçã = ':'verde ou vermelha',
+        'Melão = ':'amarelo',
+        'Abacate = ':'verde',
+        'Tangerina = ':'laranja'}
+chaves9 = dic9.keys()
+valores9 = dic9.values()
+for chaves9,valores9 in dic9.items():
+  print(chaves9,valores9)
+print("\n")
+
+#Nº10
+print("Exercício 10")
+dic10 = {'Vôlei':6,
+         'Handebol':7,
+         'Badminton':1 & 2}
+jogo = input("Digite um dos esportes a seguir para saber a quantidade de jogadores necessária: Vôlei, Handebol, Badminton: ")
+if 'vôlei' in jogo:
+  print("São necessários 6 jogadores")
+elif 'handebol' in jogo:
+  print("São necessários 7 jogadores")
+elif 'badminton' in jogo:
+  print("É necessário 1 jogador na modalidade simples, e 2 na modalidade em duplas")
+else:
+  print("A resposta está incorreta, escolha uma das opções citadas.")

@@ -1,0 +1,95 @@
+#Conjuntos
+#1
+print("Exercicio 1")
+conjuntodez = {1,2,3,4,5,6,7,8,9,10}
+print(conjuntodez)
+print("\n")
+
+#2
+print("Exercicio 2")
+conjuntoa = {1,2,3,4,5}
+conjuntob = {3,4,5,6,7}
+print("Conjunto A: ",conjuntoa)
+print("Conjunto B: ",conjuntob)
+uniaoa = conjuntoa.union(conjuntob)
+print("União: ",uniaoa)
+interseccao = conjuntoa.intersection(conjuntob)
+print("Interseção: ",interseccao)
+diferenca = conjuntoa.difference(conjuntob)
+print("Diferença: ",diferenca)
+print("\n")
+
+#3
+print("Exercicio 3")
+vogais = {'a','e','i','o','u'}
+palavra = input("Digite uma palavra: ")
+vogal = vogais.intersection(palavra)
+print(vogal)
+print("\n")
+
+#4
+print("Exercicio 4")
+frutas1 = {'maracujá','melancia','banana'}
+frutas2 = {'maçã','maracujá','uva'}
+print("Frutas 1: ",frutas1)
+print("Frutas 2: ",frutas2)
+fruta = frutas1.intersection(frutas2)
+print("Fruta presente nos dois conjuntos:",fruta)
+print("\n")
+
+#5
+print("Exercicio 5")
+conjuntonum = {7,8,15,16,5,4}
+print("Conjunto: ",conjuntonum)
+print("Menor numero: ",['4'])
+print("Maior numero: ",['16'])
+print("\n")
+
+#6
+print("Exercicio 6")
+arcoiris = {'vermelho', 'laranja', 'amarelo', 'verde',
+'azul', 'anil','violeta'}
+cor = input("Digite uma cor: ")
+if cor in arcoiris:
+  print(cor, " esta presente no arco iris.")
+print("\n")
+
+#7
+print("Exercicio 7")
+semana = {'segunda', 'terça', 'quarta', 'quinta',
+'sexta', 'sábado', 'domingo'}
+semana.remove('segunda')
+semana.remove('terça')
+semana.remove('quarta')
+semana.remove('quinta')
+semana.remove('sexta')
+print(semana)
+print("\n")
+
+#8
+print("Exercicio 8")
+conjuntovinte = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20}
+conjuntopares = {2,4,6,8,10}
+diferencapares = conjuntovinte.difference(conjuntopares)
+print("Diferença: ",diferencapares)
+print("\n")
+
+#9
+print("Exercicio 9")
+notas = {1.6,3.0,1,1,1.8}
+print("Notas do aluno: ",notas)
+notatotal = sum(notas)
+if notatotal > 7:
+  print("Aluno aprovado.")
+else:
+  print("Aluno reprovado.")
+print("\n")
+
+#10
+print("Exercicio 10")
+numerosprimos = (2,3,5,7,11,13,17,19)
+verificacao = int(input("Digite um numero de 1 a 20: "))
+if verificacao in numerosprimos:
+  print("Esse numero é primo.")
+else:
+  print("Esse numero não é primo.")
